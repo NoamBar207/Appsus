@@ -1,0 +1,10 @@
+{
+  "homepage": "https://NoamBar207.github.io",
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  }
+}
