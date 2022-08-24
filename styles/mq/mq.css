@@ -1,0 +1,12 @@
+@media (max-width: 640px){
+    .mail .body {
+      display: none;
+        
+    }
+
+    .list-container{
+        
+        /* z-index: 40; */
+    }
+
+}

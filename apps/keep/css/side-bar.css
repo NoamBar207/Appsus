@@ -1,0 +1,30 @@
+
+/* ////Side-Bar/// */
+
+.side-bar {
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    margin-top: 11rem;
+    /* gap: 3rem; */
+    align-items: center;
+    font-size: 1.5rem;
+    position: fixed;
+    padding-inline-start: 1.6rem;
+    /* margin-right: 20px; */
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    /* overflow-x: hidden; */
+    /* Disable horizontal scroll */
+}
+.side-bar i{
+    margin: 1rem;
+    justify-self: center;
+    /* align-items: center; */
+}
+
+

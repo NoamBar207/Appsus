@@ -1,0 +1,108 @@
+.compose-link{
+    /* margin-inline-start: 0.6rem; */
+    
+    box-shadow: 0 1px 2px .5px rgb(60 64 67 / 30%);
+    border-radius: 50px;
+    margin-bottom: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.plus-icon{
+    width: 30px;
+}
+
+.compose-mail{
+    position: fixed;
+    bottom: 0;
+    left: 1.6rem;
+    width: 500px;
+    height: 500px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.257);
+    z-index: 20;
+    
+ 
+}
+
+.compose-mail>*{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    
+}
+
+.compose-mail .new-email{
+    background-color: #3f4043 ;
+    color: white;
+    padding: 0.3125em;
+    padding-left: 1em;
+    display: flex;
+    align-items: center;
+    
+}
+
+.to-draft{
+    background-color: transparent;
+    color: gray;
+    font-size: 1em;
+    position: absolute; 
+    bottom:95%;
+    left: 95%;
+    
+
+}
+
+
+.compose-mail .mail-form{
+    /* height: 100%; */
+    flex:1;
+    width: 100%;
+    justify-content: stretch;
+    border: none;
+    flex:1
+}
+
+.compose-mail .mail-form>*{
+    /* padding: 10px; */
+    border: none;
+    border-bottom: .5px rgba(211, 211, 211, 0.301) solid;
+    
+}
+
+::placeholder{
+    text-align: start;
+    padding: 5px;
+}
+:placeholder-shown{
+    padding: 10px;
+}
+
+.compose-mail .mail-form .to{
+  
+}
+
+.compose-mail .mail-form .subject{
+
+}
+
+.compose-mail .mail-form .body{
+    flex:1;
+}
+
+.compose-mail .send{
+    width: 100px;
+    /* height: 30px; */
+    padding: 6px;
+    margin: 0;
+    background-color: rgb(26, 115, 232);
+    color: white;
+    border-radius: 5px;
+    margin-left: 1em;
+    margin-bottom: .5em;;
+    z-index: 20;
+}

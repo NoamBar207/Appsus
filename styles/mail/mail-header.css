@@ -1,0 +1,56 @@
+.mail-header{
+    border-bottom: .5px rgba(211, 211, 211, 0.301) solid;
+    height: 60px;
+    margin-bottom: 20px;
+
+}
+
+.dot{
+    color: seagreen;
+    font-size: 40px;
+}
+
+.mail-header .user-sign{
+    border-radius: 50%;
+    background-color: seagreen;
+    width: 30px;
+    height: 30px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+.mail-header .search{
+    /* border: rgba(173, 216, 230, 0.425) 1px solid ; */
+    border: none;
+    background-color: rgba(242,245,245,0.8);
+    border-radius: 20px;
+    padding: 15px;
+    padding-left: 100px;
+    padding-right: 100px;
+    
+  
+
+}
+
+.gmail-logo{
+    align-items: center;
+    gap:5px;
+}
+
+.gmail-logo-img{
+    width: 50px;
+}
+
+
+::-webkit-input-placeholder { 
+    text-align:center;
+  }
+
+  .header-content{
+      /* gap:10px; */
+  }
+
+  .mail-logo{
+      font-size: 28px;
+      font-family: monsterrat-alter-thin;
+  }

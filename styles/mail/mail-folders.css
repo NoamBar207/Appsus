@@ -1,0 +1,186 @@
+.main-content {}
+
+.folder-list {
+    margin: 0;
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 0;
+    align-content: flex-start;
+    gap: 15px;
+    width: 150px;
+
+
+}
+
+
+
+.folder-list>* {
+    justify-content: flex-start;
+    gap:10px;
+}
+
+.folder-list .category-img-container{
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/category\ icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    opacity: 0.8;
+}
+
+.folder-list .starred-img-container {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/star-full');
+    background-position: center;
+    /* background-position-x: -5%;
+    background-position-y: center; */
+    background-repeat: no-repeat;
+    background-size: 20px;
+    opacity: 0.5;
+
+}
+
+.folder-list .sent-img-container {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/sent.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    opacity: 0.5;
+
+}
+
+.folder-list .draft-img-container {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/draft.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    opacity: 0.5;
+    /* background-position-x: -5%;
+    background-position-y: center; */
+
+}
+
+.folder-list .trash-img-container {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/trash.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    opacity: 0.5;
+    /* background-position-x: -7%;
+    background-position-y: center; */
+
+}
+
+.folder-list .inbox-img-container {
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/inbox.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    opacity: 0.5;
+    /* background-position-x: -5%;
+    background-position-y: center; */
+
+}
+
+.list-container {
+    gap: 40px;
+}
+
+.read-quant {
+    width: 100px;
+
+    height: 20px;
+    box-shadow: 0 1px 2px .5px rgb(60 64 67 / 30%);
+}
+
+.read-quant .precentage {
+    height: 100%;
+    background: #f69c3c9f;
+    color:var(--color1);
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+ 
+
+}
+
+.folder-list>*{
+    cursor: pointer;
+}
+
+.folder-list .categories-content{
+    margin: 0;
+    align-self: stretch;
+    justify-content: space-between;
+    padding: 0;
+    align-content: flex-start;
+    gap: 15px;
+    margin-inline-start: 20px;
+}
+
+.folder-list .categories-content>*{
+    gap: 10px;
+
+}
+
+.folder-list .categories-content.close{
+    display: none;
+}
+
+.folder-list .categories-content .family-img-container{
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/family-icon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 38px;
+    opacity: 0.54;
+    /* background-position-x: -7%;
+    background-position-y: center; */
+}
+
+.folder-list .categories-content .friends-img-container{
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/friends-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    opacity: 0.5;
+    /* background-position-x: -7%;
+    background-position-y: center; */
+}
+
+.folder-list .categories-content .promotions-img-container{
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/promotions.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    opacity: 0.5;
+    /* background-position-x: -7%;
+    background-position-y: center; */
+}
+
+.folder-list .categories-content .spam-img-container{
+    width: 25px;
+    height: 25px;
+    background-image: url('../../img/spam-icon.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    opacity: 0.5;
+    /* background-position-x: -7%;
+    background-position-y: center; */
+}

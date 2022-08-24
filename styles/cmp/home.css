@@ -1,0 +1,27 @@
+.main-logo{
+    font-family: monsterrat-alter-thin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size:100px;
+}
+
+.main-logo .dot-main{
+    color: seagreen;
+
+}
+
+.home-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90vh;
+    justify-content: space-between;
+}
+
+.little{
+    font-size: small;
+  
+   
+}
+

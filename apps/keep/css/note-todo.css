@@ -1,0 +1,61 @@
+
+
+ .note ul{
+    /* height: 2rem; */
+
+} 
+.todo-li{
+    justify-content: space-between;
+}
+
+.todo-txt {
+    width: 100%;
+    display: flex;
+    font-size: 0.9rem;
+    align-self: flex-start;
+    word-break: break-all;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.todo-delete{
+    align-self: center;
+    padding-right: 1rem;
+    width: 3rem;
+}
+.todo-delete i{
+    cursor: pointer;
+}
+
+.todo-delete button {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.todo-li input {
+    margin-top: 0.5rem;
+    background-color: transparent;
+    border: none;
+    height: 0.5rem;
+    width: 25rem;
+}
+
+.todo .li-to-scroll {
+    height: 8rem;
+    overflow-y: auto;
+}
+
+.todo .li-to-scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  /* Track */
+.todo .li-to-scroll::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+.todo .li-to-scroll::-webkit-scrollbar-thumb {
+    background: #888;
+  }

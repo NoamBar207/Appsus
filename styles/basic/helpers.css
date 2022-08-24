@@ -1,0 +1,50 @@
+.flex{
+    display: flex;
+}
+
+.flex.column{
+    flex-direction: column;
+}
+
+.flex.row{
+    flex-direction: row;
+}
+
+.flex.space-between{
+    justify-content: space-between;
+}
+
+.flex.center{
+    justify-content: center;
+    align-items: center;
+}
+
+.flex.align-center{
+    align-items: center;
+}
+
+.grid{
+    display: grid;
+}
+
+.btn{
+    margin: 0;
+    padding: 6;
+    width: 6.25rem;
+    border: none;
+    /* background-color: transparent; */
+    cursor: pointer;
+    /* color: var(--color2);
+    font-family: monsterrat-regular, serif;
+    color: white; */
+}
+
+.clean-list{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .none{
+    display: none;
+} */

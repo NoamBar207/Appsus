@@ -1,0 +1,299 @@
+/* /////app///// */
+.app-notes {
+    /* grid-template-columns: 70rem 8rem;
+    grid-template-rows: 8rem 1fr;
+    grid-template-areas: 
+    'add side-bar'
+    'notelist side-bar'
+    'notelist side-bar'  */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+
+.note-list {
+    margin: 0;
+    /* grid-template-columns: repeat(3,1fr);
+    grid-auto-flow:dense; */
+
+    display: flex;
+    column-count: 3;
+    column-gap: .5rem;
+    /* 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(fit-content, auto); */
+    flex-direction: row;
+    flex-wrap:wrap;
+    height: 50%;
+    /* height: 200px; */
+    /* height: fit-content; */
+    justify-content: center;
+    align-items: center;
+    /* max-width:900px; */
+    border-radius: 1rem;
+    gap:1rem;
+}
+
+
+
+
+.note-list>* {
+    /* display: flex; */
+    background-color: aqua;
+    border-radius: 15px;
+    text-align: center;
+    /* padding: 20px; */
+    flex-direction: column;
+    height: fit-content;
+}
+
+
+.note-preview {
+    box-shadow: 0 2px 3px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    min-height: 200px;
+    /* max-height: 300px; */
+    min-width: 300px;
+    /* 
+    max-width: 300px; */
+    max-width: 380px;
+    /* margin: 1.5rem; */
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-top:1rem; */
+}
+
+.note-preview .note {
+    flex: 1;
+}
+
+.palette-bgc {
+    margin: 0;
+}
+
+.note-preview .note img {
+    max-height: 10rem;
+    border-radius: 1rem;
+}
+
+.note-preview h3 {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1rem;
+    font-weight: normal;
+    line-height: 2.5rem;
+    margin: 0.7rem;
+}
+
+.notes h1 {
+    font-family: "Google Sans", Roboto, Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 3rem;
+    margin-top: 0.3rem;
+}
+
+.notes-title-pin {
+    text-decoration: underline 1px rgb(154, 154, 154);
+}
+
+.note-preview-btn {
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 1.25rem;
+    margin-right: 1rem;
+}
+
+.note-preview-btn button {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.note-preview-btn i {
+    align-self: flex-end;
+    /* padding: 0.3152rem; */
+}
+
+.note-preview-btn i:hover {
+    background-color: rgb(168, 168, 168);
+    border-radius: 1rem;
+    cursor: pointer;
+    /* padding: 5px; */
+}
+
+.note-preview-btn .input-color {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.note-preview-btn>* {
+    margin: 0;
+}
+
+.note-preview.todo {
+    height: fit-content;
+}
+
+.youtube-video {
+    border-radius: 1rem;
+    height: 9rem;
+    /* width: 15rem; */
+}
+
+.note-txt {
+    min-height: fit-content;
+    max-height: 12rem;
+    overflow-y: auto;
+    /* background-color: yellowgreen; */
+}
+
+.note-txt::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+.note-txt::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+.note-txt::-webkit-scrollbar-thumb {
+    background: #7abf8a;
+}
+
+
+
+
+/* ////filter/// */
+.header {
+    /* margin: 0; */
+    margin-top: 0.75rem;
+    height: 5rem;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header img {
+    height: 4.5rem;
+    width: 4.5rem;
+}
+
+.note-filter-head {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.note-filter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(233, 233, 233, 0.8);
+    padding: 0.75rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    box-shadow: 0 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    transition: .3s;
+    margin:0;
+    margin: 1rem;
+}
+
+.note-filter input {
+    border-radius: 0.625rem;
+    background-color: transparent;
+    border: none;
+    font-size: 1rem;
+    width: 30rem;
+}
+
+.note-filter label {
+    border: none;
+}
+
+
+.header span {
+    display: inline-block;
+    font-family: "Product Sans", Arial, sans-serif;
+    font-size: 1.625rem;
+    line-height: 1.5rem;
+    padding-right: 0.5rem;
+    position: relative;
+    top: -1.5px;
+    vertical-align: middle;
+}
+
+
+
+.header .user-sign {
+    border-radius: 50%;
+    background-color: seagreen;
+    width: 3.2rem;
+    height: 3.2rem;
+    font-size: 1.7rem;
+    color: white;
+    margin: 0;
+}
+
+
+@media screen and (max-width:950px){
+    .note-filter input{
+        width: 25rem;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .note-filter input{
+        width: 15rem;
+        /* margin-right:5px */
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .note-filter input{
+        width: 15rem;
+        /* margin-right:5px */
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .note-filter input{
+        width: 10rem;
+        font-size: 0.8rem;
+        /* margin-right:5px */
+    }
+    
+    .header img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .header span {
+        font-size: 1rem;
+    }
+
+    .header .user-sign {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .header img {
+        height: 3rem;
+        width: 3rem;
+    }
+    .header span {
+        display: none;
+    }
+
+    .header .user-sign {
+        width: 2rem;
+        height: 2rem;
+    }
+}

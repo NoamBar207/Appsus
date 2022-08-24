@@ -1,0 +1,96 @@
+.select-note-type {
+    min-height: 3.5rem;
+    max-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin: auto;
+    box-shadow: 1px 2px 0 rgb(60 64 67 / 30%), 0 1px 3px 1px rgb(60 64 67 / 15%);
+    border-radius: 0.5rem;
+    width: 30rem;
+    /* opacity: 0; */
+    transition: .5s;
+}
+
+.select-note-type button {
+    /* background-color: transparent; */
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+
+.select-note-type label {
+    align-self: center;
+    cursor: pointer;
+}
+
+.select-note-type input {
+    /* background-color: transparent; */
+    border: none;
+    width: 15rem;
+    word-wrap: break-word;
+}
+input:focus-visible {
+    outline: none;
+}
+
+.to-much {
+    display: flex;
+    /* opacity: 0; */
+    display: none;
+    flex-direction: column;
+}
+
+.sec-add-input {
+    height: 4rem;
+    word-wrap: break-word;
+}
+
+.select-type-btn {
+    flex-direction: row;
+}
+
+/* The Checkbox Hack */
+#chk:checked+.to-much {
+    display: block;
+    height: 10rem;
+}
+
+#chk {
+    display: none;
+}
+
+
+.upper hr {
+    border-color: gray;
+}
+
+/* NoteFilter */
+
+.note-filter {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+@media screen and (max-width: 550px) {
+
+    .select-note-type {
+        /* align-items: center; */
+        display: flex;
+        /* justify-self: center; */
+        align-self: center;
+        width: 20rem;
+        margin: 5px;
+        /* background-color: aquamarine; */
+    }
+
+    .select-note-type input {
+        width: 10rem;
+    }
+
+}
